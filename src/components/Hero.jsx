@@ -83,7 +83,7 @@ function Hero() {
             {/* Image Container */}
             <div className="relative w-full h-full rounded-[3.5rem] bg-neutral-100 dark:bg-neutral-800 border-[8px] border-white dark:border-neutral-900 overflow-hidden shadow-2xl">
               <img
-                src="/public/product/image.png"
+                src="/product/image.png"
                 alt="Profile"
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
               />
