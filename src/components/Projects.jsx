@@ -1,41 +1,63 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiFolder, FiArrowRight, FiPlayCircle } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiFolder, FiArrowRight } from 'react-icons/fi';
 
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "ប្រព័ន្ធលក់ទំនិញអនឡាញពេញលេញ បង្កើតឡើងដោយប្រើ Laravel blade",
-      tech: ["Laravel", "MySQL", "Tailwind"],
-      github: "#",
-      demo: "/public/videos/Demo  final at etec - Made with Clipchamp.mp4",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+      title: "E-commerce Web Application | June 2026 – Present",
+      description: "A full-stack e-commerce platform with product browsing, authentication, cart management, and order placement. Built secure RESTful APIs with transactional order processing and role-based access control (RBAC) for customers and admins.",
+      tech: ["React.js", "Spring Boot", "PostgreSQL", "Docker"],
+      github: "https://github.com/leakseth/ecommerce-backend",
+      demo: "#",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      title: "School Management System",
-      description: "កម្មវិធីគ្រប់គ្រងសាលារៀន សម្រាប់គ្រប់គ្រងវត្តមានសិស្ស ពិន្ទុ និងកាលវិភាគសិក្សា។",
-      tech: ["PHP", "Laravel", "Bootstrap", "PostgreSQL"],
-      github: "#",
+      title: "Clothing E-commerce Website",
+      description: "A modern e-commerce platform with responsive design, reusable frontend components, and a clean product catalog. Deployed via Vercel.",
+      tech: ["React.js", "Tailwind CSS"],
+      github: "https://github.com/leakseth/Z-Shop",
       demo: "#",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      title: "Portfolio Website",
-      description: "គេហទំព័រផ្ទាល់ខ្លួនដែលមានចលនាស្អាតៗ និងមាន Dark Mode ពេញលេញ។",
-      tech: ["React", "Framer Motion", "Tailwind"],
-      github: "#",
+      title: "Electronics E-commerce",
+      description: "A fullstack e-commerce system with an admin dashboard for product management, CRUD features, authentication, and order tracking.",
+      tech: ["Laravel-blade", "MySQL"],
+      github: "https://github.com/leakseth/ecommerce-dashboard",
       demo: "#",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      title: "User Management System",
+      description: "A full-stack app with JWT authentication, protected API routes via Spring Security, CRUD user operations, and Swagger-documented REST APIs.",
+      tech: ["React.js", "Spring Boot"],
+      github: "https://github.com/leakseth/user-management-backend",
+      demo: "#",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      title: "Course Registration System Backend",
+      description: "A secure backend with JWT auth, role-based access control (Admin/Teacher/Student), BCrypt password encryption, DTO/Mapper pattern, and Swagger docs.",
+      tech: ["Spring Boot", "Spring Security", "Swagger"],
+      github: "https://github.com/leakseth/Course-Registration-System-Backend",
+      demo: "#",
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      title: "BrownPOS – Full-Stack POS System",
+      description: "A complete Point of Sale system for small shops with product, inventory, and cash session management. Features secure REST APIs, JWT auth, role-based access, POS checkout with split payments, refunds, ABA QR payment integration, and a responsive React dashboard backed by a normalized MySQL database.",
+      tech: ["React.js", "Spring Boot", "MySQL", "Tailwind CSS"],
+      github: "https://github.com/leakseth/BrownPOS",
+      demo: "#",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000&auto=format&fit=crop"
     }
   ];
-
-  const [activeVideo, setActiveVideo] = useState(null);
 
   return (
     <section id="projects" className="py-0 lg:py-20 bg-white dark:bg-[#0a0a0a]">
       <div className="w-[94%] max-w-5xl mx-auto">
-        
+
         {/* Title */}
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-3xl md:text-4xl font-black text-gray-900 dark:text-white mb-4">
@@ -57,21 +79,30 @@ function Projects() {
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-                  <a href={project.github} className="p-3 bg-white rounded-full text-black hover:bg-green-500 hover:text-white transition-colors">
-                    <FiGithub size={20} />
-                  </a>
-                  <button
-                    onClick={() => setActiveVideo(project.demo)}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-white rounded-full text-black hover:bg-green-500 hover:text-white transition-colors"
                   >
-                    <FiPlayCircle size={20} />
-                  </button>
+                    <FiGithub size={20} />
+                  </a>
+                  {project.demo !== "#" && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-white rounded-full text-black hover:bg-green-500 hover:text-white transition-colors"
+                    >
+                      <FiExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -84,7 +115,7 @@ function Projects() {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-green-500 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
                   {project.description}
                 </p>
 
@@ -108,32 +139,7 @@ function Projects() {
           </a>
         </div>
       </div>
-      {activeVideo && (
-        <div onClick={() => setActiveVideo(null)} className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
-          
-          <div className="relative w-[90%] max-w-3xl">
-            
-            {/* Close Button */}
-            <button
-              onClick={() => setActiveVideo(null)}
-              className="absolute -top-10 right-0 text-white text-lg font-bold"
-            >
-              ✕ Close
-            </button>
-
-            {/* Video */}
-            <video
-              src={activeVideo}
-              controls
-              autoPlay
-              className="w-full rounded-xl shadow-2xl"
-            />
-            
-          </div>
-        </div>
-      )}
     </section>
-    
   );
 }
 
