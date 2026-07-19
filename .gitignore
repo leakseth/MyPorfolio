@@ -26,3 +26,4 @@ dist-ssr
 # Ignore videos
 *.mp4
 public/videos/
+public/videos/*.mp4
