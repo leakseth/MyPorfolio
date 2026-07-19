@@ -36,8 +36,7 @@ function Hero() {
               sequence={[
                 'A Backend Developer', 2000,
                 'A Java & Spring Boot Dev', 2000,
-                'A React.js Developer', 2000,
-                'A PHP Developer', 2000,
+                'A Frontend Developer', 2000,
               ]}
               speed={50}
               cursor={true}
@@ -55,7 +54,7 @@ function Hero() {
 
           <div className="flex flex-wrap gap-5">
             <a
-              href='https://drive.google.com/file/d/1-NUogD_SaZIS4ifspFBmTJg9CD0VOzIk/view?usp=sharing'
+              href='https://drive.google.com/file/d/12ryUgH4cXa-rpCrQlUCmFT5B-zTzT-Yi/view'
               target='_blank'
               rel="noopener noreferrer"
               className="mt-10 w-full lg:w-[230px] sm:w-[240px] px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-2xl transition-all shadow-lg shadow-green-600/20 flex items-center justify-center gap-3">
@@ -83,7 +82,7 @@ function Hero() {
             {/* Image Container */}
             <div className="relative w-full h-full rounded-[3.5rem] bg-neutral-100 dark:bg-neutral-800 border-[8px] border-white dark:border-neutral-900 overflow-hidden shadow-2xl">
               <img
-                src="/product/image.png"
+                src="/product/image1.png"
                 alt="Profile"
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
               />

@@ -127,7 +127,7 @@ function Navbar() {
         {/* Right Controls */}
         <div className="flex items-center gap-2">
           <a
-            href="https://drive.google.com/file/d/1-NUogD_SaZIS4ifspFBmTJg9CD0VOzIk/view?usp=sharing"
+            href="https://drive.google.com/file/d/12ryUgH4cXa-rpCrQlUCmFT5B-zTzT-Yi/view"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors px-2"
@@ -154,7 +154,7 @@ function Navbar() {
           </button>
 
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/leakseth"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub profile"
@@ -194,7 +194,7 @@ function Navbar() {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1-NUogD_SaZIS4ifspFBmTJg9CD0VOzIk/view?usp=sharing"
+                href="https://drive.google.com/file/d/12ryUgH4cXa-rpCrQlUCmFT5B-zTzT-Yi/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-neutral-800 flex items-center gap-2"

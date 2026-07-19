@@ -75,7 +75,7 @@ function Contact() {
 
             <div className="space-y-6">
               <ContactInfo icon={<FiMail />} label="Email Me" value="suyp8944@gmail.com" color="text-green-500" />
-              <ContactInfo icon={<FiMessageCircle />} label="Telegram" value="@Pisethsuy" color="text-blue-500" />
+              <ContactInfo icon={<FiMessageCircle />} label="Telegram" value="@PisethSuy" color="text-blue-500" />
               <ContactInfo icon={<FiMapPin />} label="Location" value="Phnom Penh, Cambodia" color="text-red-500" />
             </div>
           </motion.div>

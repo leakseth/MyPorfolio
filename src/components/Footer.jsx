@@ -28,7 +28,7 @@ function Footer() {
           <div className="flex flex-col items-center">
             <div className="flex items-center gap-4 mb-4">
               {[
-                { icon: <FiGithub size={18} />, link: "https://github.com/", color: "hover:bg-gray-900 hover:text-white" },
+                { icon: <FiGithub size={18} />, link: "https://github.com/leakseth", color: "hover:bg-gray-900 hover:text-white" },
                 { icon: <FiFacebook size={18} />, link: "https://web.facebook.com/zsmoszin", color: "hover:bg-blue-600 hover:text-white" },
                 { icon: <FiLinkedin size={18} />, link: "https://www.linkedin.com/in/suy-piseth-496182383/", color: "hover:bg-blue-500 hover:text-white" },
               ].map((social, index) => (
