@@ -134,9 +134,9 @@ function Projects() {
 
         {/* More Projects Button */}
         <div className="mt-16 text-center">
-          <a href="https://github.com/" className="inline-flex items-center gap-2 text-green-500 font-bold hover:underline">
+          <button href="https://github.com/" className="inline-flex items-center gap-2 text-green-500 font-bold hover:underline">
             See more on GitHub <FiArrowRight />
-          </a>
+          </button>
         </div>
       </div>
     </section>

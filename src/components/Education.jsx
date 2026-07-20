@@ -15,6 +15,18 @@ function Education() {
       title: "Full Stack Web Development",
       school: "ETEC-CENTER",
       desc: "Intensive training in modern web technologies including React.js and building robust APIs with Laravel."
+    },
+    {
+      year: "2021 - 2024",
+      title: "High School",
+      school: "Hun Sen Tbeang High School",
+      desc: "Completed upper secondary education with a focus on natural sciences and foundational computer literacy."
+    },
+    {
+      year: "2018 - 2021",
+      title: "Lower Secondary School",
+      school: "Hun Sen Tbeang High School",
+      desc: "Completed lower secondary education, building strong fundamentals in mathematics and general sciences."
     }
   ];
 
@@ -39,7 +51,7 @@ function Education() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5, delay: (index % 2) * 0.2 }}
               className="group relative p-8 rounded-[2.5rem] bg-gray-50 dark:bg-[#111] border border-gray-100 dark:border-neutral-800 hover:border-green-500/50 transition-all duration-500 shadow-xl shadow-transparent hover:shadow-green-500/5"
             >
               {/* Badge*/}
